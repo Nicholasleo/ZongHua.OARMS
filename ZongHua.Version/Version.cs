@@ -17,7 +17,7 @@ using System.Reflection;
 //通过使用 "*"，如下所示:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.1")]
 [assembly: AssemblyFileVersion("1.0.0.1")]
 /*
     <Compile Include = "$(SolutionDir)\ZongHua.Version\Version.cs" >
