@@ -5,7 +5,6 @@ using System.Reflection;
 
 [assembly: AssemblyCopyright("Copyright ©  2019-2029 泉州市纵华软件科技有限公司. All Rights Reserved")]
 [assembly: AssemblyCompany("泉州市纵华软件科技有限公司")]
-[assembly: AssemblyProduct("OARMS-订补货管理系统")]
 // 程序集的版本信息由下列四个值组成: 
 //
 //      主版本
