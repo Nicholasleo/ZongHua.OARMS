@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Routing;
 
-namespace ZongHua.Enterprise.Api
+namespace ZongHua.Base.Api
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

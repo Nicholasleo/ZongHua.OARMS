@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BDAD0370-07E4-4B01-B1A6-88C6B26348D4}</ProjectGuid>
+    <ProjectGuid>{82B20B68-7C12-4726-8D8C-ABAC26409FFD}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZongHua.Enterprise.Api</RootNamespace>
-    <AssemblyName>ZongHua.Enterprise.Api</AssemblyName>
+    <RootNamespace>ZongHua.Ultimate.Api</RootNamespace>
+    <AssemblyName>ZongHua.Ultimate.Api</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -88,7 +88,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="F:\Work\GitHubProject\Nicholasleo\ZongHua.OARMS\\ZongHua.Version\Version.cs">
+    <Compile Include = "$(SolutionDir)\ZongHua.Version\Version.cs" >
       <Link>Properties\Version.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,9 +120,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>7465</DevelopmentServerPort>
+          <DevelopmentServerPort>7482</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3926/</IISUrl>
+          <IISUrl>http://localhost:7482/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

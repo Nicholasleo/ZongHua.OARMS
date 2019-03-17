@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(SolutionDir)\ZongHua.Version\Version.cs">
-      <Link> Properties\Version.cs</Link>
+      <Link>Properties\Version.cs</Link>
     </Compile>
     <Compile Include="DataImpl\MySqlProvider.cs" />
     <Compile Include="DbFactory.cs" />

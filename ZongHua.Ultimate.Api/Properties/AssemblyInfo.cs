@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过下列特性集
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("OARMS-企业版API")]
+[assembly: AssemblyTitle("OARMS-旗舰版API")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("OARMS-企业版")]
+[assembly: AssemblyProduct("OARMS-旗舰版")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -18,5 +18,5 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于 typelib 的 ID
-[assembly: Guid("bdad0370-07e4-4b01-b1a6-88c6b26348d4")]
+[assembly: Guid("82b20b68-7c12-4726-8d8c-abac26409ffd")]
 
