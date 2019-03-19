@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Text;
+﻿using System.Net.Http;
+using System.Web.Http;
 
 namespace ZongHua.Api.Interface
 {
     /// <summary>
-    /// 移动端登录抽象类
+    /// 移动端登录接口
     /// </summary>
     public interface IAppLogin
     {
@@ -15,38 +13,44 @@ namespace ZongHua.Api.Interface
         /// </summary>
         /// <param name="orderJson"></param>
         /// <returns></returns>
-        HttpResponseMessage GetBackgroundImage(string orderJson);
+        [HttpGet]
+        IHttpActionResult GetBackgroundImage(string orderJson);
         /// <summary>
         /// 登录校验
         /// </summary>
         /// <param name="orderJson"></param>
         /// <param name="userJson"></param>
         /// <returns></returns>
-        HttpResponseMessage LoginCheck(string orderJson, string userJson);
+        [HttpPost]
+        IHttpActionResult LoginCheck(string orderJson, string userJson);
         /// <summary>
         /// 获取订单列表
         /// </summary>
         /// <param name="orderJson"></param>
         /// <returns></returns>
-        HttpResponseMessage GetOrderLists(string orderJson);
+        [HttpGet]
+        IHttpActionResult GetOrderLists(string orderJson);
         /// <summary>
         /// 获取功能菜单项
         /// </summary>
         /// <param name="orderJson"></param>
         /// <returns></returns>
-        HttpResponseMessage GetMenuItems(string orderJson);
+        [HttpGet]
+        IHttpActionResult GetMenuItems(string orderJson);
         /// <summary>
         /// 获取系统参数
         /// </summary>
         /// <param name="orderJson"></param>
         /// <returns></returns>
-        HttpResponseMessage GetSysParams(string orderJson);
+        [HttpGet]
+        IHttpActionResult GetSysParams(string orderJson);
         /// <summary>
         /// 获取拓展的功能项
         /// </summary>
         /// <param name="orderJson"></param>
         /// <returns></returns>
-        HttpResponseMessage GetExtMenuItems(string orderJson);
+        [HttpGet]
+        IHttpActionResult GetExtMenuItems(string orderJson);
 
     }
 }

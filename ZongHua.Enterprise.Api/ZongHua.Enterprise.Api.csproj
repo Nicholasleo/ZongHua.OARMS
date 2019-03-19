@@ -89,10 +89,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="F:\Work\GitHubProject\Nicholasleo\ZongHua.OARMS\\ZongHua.Version\Version.cs">
+    <Compile Include="$(SolutionDir)\ZongHua.Version\Version.cs">
       <Link>Properties\Version.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,8 +109,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZongHua.Api.Interface\ZongHua.Api.Interface.csproj">
+      <Project>{3A8C9ACB-9801-4076-A385-51BD330AB7AB}</Project>
+      <Name>ZongHua.Api.Interface</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

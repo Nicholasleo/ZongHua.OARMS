@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZongHua.App.Implement
+namespace ZongHua.Api.Interface
 {
-    public class Class1
+    interface IAppReport
     {
     }
 }

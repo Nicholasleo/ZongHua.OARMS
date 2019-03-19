@@ -93,8 +93,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="F:\Work\GitHubProject\Nicholasleo\ZongHua.OARMS\\ZongHua.Version\Version.cs">
-      <Link> Properties\Version.cs</Link>
+    <Compile Include="$(SolutionDir)\ZongHua.Version\Version.cs">
+      <Link>Properties\Version.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -112,6 +112,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ZongHua.Api.Interface\ZongHua.Api.Interface.csproj">
+      <Project>{3A8C9ACB-9801-4076-A385-51BD330AB7AB}</Project>
+      <Name>ZongHua.Api.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ZongHua.App.Interface\ZongHua.App.Interface.csproj">
       <Project>{1ADCA20E-EE5F-475D-B85F-104C9EF321FE}</Project>
       <Name>ZongHua.App.Interface</Name>

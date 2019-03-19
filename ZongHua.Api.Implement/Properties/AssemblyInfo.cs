@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("移动端接口库")]
-[assembly: AssemblyDescription("移动端接口库")]
+[assembly: AssemblyTitle("OARMS-接口实现库")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("移动端接口库")]
+[assembly: AssemblyProduct("OARMS-接口实现库")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -18,4 +18,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("1adca20e-ee5f-475d-b85f-104c9ef321fe")]
+[assembly: Guid("c945ea07-cbab-477b-8441-da3f41e11b7d")]

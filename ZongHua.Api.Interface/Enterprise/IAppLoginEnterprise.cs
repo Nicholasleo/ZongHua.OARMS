@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ZongHua.Api.Interface
 {
-    /// <summary>
-    /// 移动端订货接口-基础
-    /// </summary>
-    public interface IAppOrder
+    public interface IAppLoginEnterprise : IAppLogin
     {
     }
 }

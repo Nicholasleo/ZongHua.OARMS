@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Newtonsoft.Json;
+using System;
 using System.Net.Http;
 using System.Text;
 using System.Web.Http;
 using System.Web.Http.Cors;
-using System.Web.Script.Serialization;
 
 namespace ZongHua.Base.Api
 {
@@ -15,7 +13,7 @@ namespace ZongHua.Base.Api
         {
             // Web API 配置和服务
             //跨域配置
-            config.EnableCors(new EnableCorsAttribute("*", "*", "GET,POST"));
+            config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
 
             // Web API 路由
             config.MapHttpAttributeRoutes();
@@ -36,8 +34,7 @@ namespace ZongHua.Base.Api
             }
             else
             {
-                JavaScriptSerializer serializer = new JavaScriptSerializer();
-                str = serializer.Serialize(obj);
+                str = JsonConvert.SerializeObject(obj);
             }
             HttpResponseMessage result = new HttpResponseMessage { Content = new StringContent(str, Encoding.GetEncoding("UTF-8"), "application/json") };
             return result;

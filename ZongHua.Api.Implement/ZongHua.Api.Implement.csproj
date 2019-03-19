@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1ADCA20E-EE5F-475D-B85F-104C9EF321FE}</ProjectGuid>
+    <ProjectGuid>{C945EA07-CBAB-477B-8441-DA3F41E11B7D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZongHua.App.Interface</RootNamespace>
-    <AssemblyName>ZongHua.App.Interface</AssemblyName>
+    <RootNamespace>ZongHua.Api.Implement</RootNamespace>
+    <AssemblyName>ZongHua.Api.Implement</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,15 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="$(SolutionDir)\ZongHua.Version\Version.cs">
       <Link>Properties\Version.cs</Link>
     </Compile>
-    <Compile Include="Enterprise\IAppOrderEnterprise.cs" />
-    <Compile Include="IAppLogin.cs" />
-    <Compile Include="IAppManage.cs" />
-    <Compile Include="IAppOrder.cs" />
-    <Compile Include="IAppReport.cs" />
-    <Compile Include="Ultimate\IAppOrderUltimate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
